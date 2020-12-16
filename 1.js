@@ -1,24 +1,23 @@
-let i = 0;
-while (i < 3) {
-    alert(i);
-    i++;
-}
-
-let a = 10;
-while (a > 5) {
-    alert (a);
-    a--;
-}
-
 let b = 0;
-do {
-    alert (b);
-    b++;
-} while (b < 3);
 
-let c = 0;
-do {
-    alert(c);
-    c++;
-} while (c < 3);
+for (b = 0; b < 5; b++) {
+    alert(b);
+}
 
+alert(b);
+
+let sum = 0;
+while (true) {
+    let value = +prompt("Введите число", '');
+    if (!value) break;
+    sum += value;
+}
+alert('Сумма: ' + sum); 
+
+let amount = 1;
+while (true) {
+    let a = Number(prompt("Введите число", ''))
+    if (!a) break;
+    amount += a;
+}
+alert('Сумма: ' + amount);
